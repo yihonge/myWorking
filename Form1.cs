@@ -19,7 +19,8 @@ namespace myWorking
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            aPlayer = new APlayerHelper(this.Handle, 0, 0, 500, 300);
+            aPlayer = new APlayerHelper(splitContainer1.Panel1.Handle, 0, 0, splitContainer1.Panel1.Width,
+                splitContainer1.Panel1.Height);
             
         }
 
@@ -48,14 +49,14 @@ namespace myWorking
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "版本：" + aPlayer.GetVersion() + Environment.NewLine;
-            textBox1.Text += "119配置结果返回：" + aPlayer.GetConfig(119) + Environment.NewLine;
-            textBox1.Text += "608配置结果返回：" + aPlayer.GetConfig(608) + Environment.NewLine;
-            textBox1.Text += "获取url:" + aPlayer.GetConfig(4) + Environment.NewLine;
-            textBox1.Text += "视频尺寸：" + aPlayer.GetVideoWidth() + "*" + aPlayer.GetVideoHeight() + Environment.NewLine;
-            textBox1.Text += "Position:" + (aPlayer.GetPosition()).ToString() + Environment.NewLine;
-            textBox1.Text += "GetBufferProgress:" + (aPlayer.GetBufferProgress()).ToString() + Environment.NewLine;
-            textBox1.Text += "GetDuration:" + (aPlayer.GetDuration()).ToString() + Environment.NewLine;
+            //textBox1.Text += "版本：" + aPlayer.GetVersion() + Environment.NewLine;
+            //textBox1.Text += "119配置结果返回：" + aPlayer.GetConfig(119) + Environment.NewLine;
+            //textBox1.Text += "608配置结果返回：" + aPlayer.GetConfig(608) + Environment.NewLine;
+            //textBox1.Text += "获取url:" + aPlayer.GetConfig(4) + Environment.NewLine;
+            //textBox1.Text += "视频尺寸：" + aPlayer.GetVideoWidth() + "*" + aPlayer.GetVideoHeight() + Environment.NewLine;
+            //textBox1.Text += "Position:" + (aPlayer.GetPosition()).ToString() + Environment.NewLine;
+            //textBox1.Text += "GetBufferProgress:" + (aPlayer.GetBufferProgress()).ToString() + Environment.NewLine;
+            //textBox1.Text += "GetDuration:" + (aPlayer.GetDuration()).ToString() + Environment.NewLine;
         }
     }
 }
